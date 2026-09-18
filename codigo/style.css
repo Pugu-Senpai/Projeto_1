@@ -16,6 +16,7 @@
     box-sizing: border-box;
     border-width: 0;
     border-style: solid;
+    margin: 0;
 }
 
 html {
@@ -44,9 +45,8 @@ html {
     justify-content: space-between;
     padding: 1.75rem;
     gap: 1.75rem;
-    border-radius: 1.75rem;
-    background-color: var(--superficie);
 }
+
 /* Retrato + Informação */
 .retrato-info {
     display: flex;
@@ -61,7 +61,9 @@ html {
     width: 15rem;
     height: 15rem;
     padding: 1rem;
+    filter: drop-shadow(0 0 1rem var(--verde-terciario));
 }
+
 /* Informação */
 .conteudo-info {
     display: flex;
@@ -138,7 +140,9 @@ h2 {
     color: var(--texto-suave);
     line-height: 1.5;
     letter-spacing: -0.01em;
-    margin: 0;  
+    margin: 0; 
+    color: var(--verde-terciario);
+    text-shadow: 0.0625rem 0.0625rem 1.2rem var(--verde-terciario);
 }
 /* Informação contacto */
 .pill-info {
@@ -177,24 +181,25 @@ a:link {
     color: var(--texto);
 }
 a:visited {
-    color: var(--texto-suave);
+    color: var(--texto);
 }
 a:hover {
     color: var(--acento);
 }
 a:active {
     color: var(--acento-suave);
+    transform: scale(0.9)
 }
 
 .links {
     display: flex;
-    height: 3rem;
-    width: 2.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
     align-items: center;
     justify-content: center;
     border-radius: 0.5rem;
-    background-color: var(--verde-secundario);
-    font-size: 1.5rem;
+    background-color: var(--verde-primario);
+    font-size: 2.2rem;
     text-decoration: none;
 }
 
@@ -223,17 +228,50 @@ a.download_cv:visited {
     color: var(--texto-acento-suave);
 }
 a.download_cv:hover {
-    color: var(--verde-primario);
+    filter: drop-shadow(0 0 0.3125rem var(--acento-suave));
 }
 a.download_cv:active {
-    color: var(--verde-terciario);
+    filter: drop-shadow(0 0 0.3125rem var(--acento-suave));
+    transform: translateY(0.0625rem)
 }
 
-.nav {
+/* BARRA DE NAVEGAÇÃO */
+.navigation {
     position: sticky;
     top: 0;
     overflow-x: auto;
+    filter: drop-shadow(0rem 1rem 1rem -2rem var(--verde-terciario));
 }
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--verde-primario);
+    width: auto;
+    height: 4rem;
+}
+
+.text-nav {
+    align-items: center;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    font-weight: 500;
+    text-decoration: none;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+/* BODY */
+body {
+    width: 100%;
+}
+
+
 
 /* Modo escuro */
 @media (prefers-color-scheme: dark) {
@@ -242,7 +280,7 @@ a.download_cv:active {
         --superficie: #1B2E22;
         --verde-primario: #14261D;
         --verde-secundario: #101d17;
-        --verde-terciario: #52B788;
+        --verde-terciario: #2b9161;
         --texto: #EDE7DA;
         --texto-suave: #A9B5AC;
         --acento: #E08942;
@@ -269,10 +307,11 @@ a.download_cv:active {
         color: var(--texto-acento-suave);
     }
     a.download_cv:hover {
-        color: var(--verde-primario);
+        filter: drop-shadow(0 0 0.3125rem var(--acento-suave));
     }
     a.download_cv:active {
-        color: var(--verde-terciario);
+        filter: drop-shadow(0 0 0.3125rem var(--acento-suave));
+        transform: translateY(0.2rem)
     }
 }
 
