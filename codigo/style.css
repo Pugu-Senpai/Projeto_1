@@ -1,5 +1,5 @@
 :root {
-    --fundo: #FAF6F0;
+    --fundo: #faf0fa;
     --superficie: #E9DFC9;
     --verde-primario: #1B4332;
     --verde-secundario: #255943;
@@ -10,6 +10,7 @@
     --acento-suave: #E08942;
     --texto-acento: #22281F;
     --texto-acento-suave: #384134;
+    --icon-fundo: #2e624c;
 }
 
 * {
@@ -23,10 +24,12 @@ html {
     background-color: var(--fundo);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
     width: 100%;
+    overflow-wrap: break-word;
 }
 
 /*=====================| HEADER |=====================*/
@@ -58,6 +61,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 1.75rem;
+    width: 100%;
 }
 /* Retrato */
 .avatar {
@@ -74,6 +78,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+    width: 100%;
 }
 /* Portfólio e certificado */
 .info-portefolio {
@@ -131,7 +136,7 @@ body {
 
 /* Nome */
 h1 {
-    font-size: 3.5rem;
+    font-size: clamp(2.25rem, 9vw, 3.5rem);
     font-weight: bolder;
     color: var(--texto);
     line-height: 1.2;
@@ -148,6 +153,14 @@ h2 {
     margin: 0; 
     color: var(--verde-terciario);
     text-shadow: 0.0625rem 0.0625rem 1.2rem var(--verde-terciario);
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--texto);
+    line-height: 1.4;
+    letter-spacing: -0.01em;
 }
 /* Informação contacto */
 .pill-info {
@@ -203,7 +216,7 @@ a:active {
     align-items: center;
     justify-content: center;
     border-radius: 0.5rem;
-    background-color: var(--verde-primario);
+    background-color: var(--icon-fundo);
     font-size: 2.2rem;
     text-decoration: none;
 }
@@ -237,7 +250,7 @@ a.download_cv:hover {
 }
 a.download_cv:active {
     filter: drop-shadow(0 0 0.3125rem var(--acento-suave));
-    transform: translateY(0.0625rem)
+    transform: translateY(0.2rem)
 }
 
 /* BARRA DE NAVEGAÇÃO */
@@ -247,6 +260,7 @@ a.download_cv:active {
     overflow-x: auto;
     z-index: 50;
     background-color: var(--verde-primario);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
 }
 
 .nav {
@@ -298,7 +312,7 @@ main {
     background-color: var(--fundo);
 }
 .secao--invertida {
-    background-color: var(--fundo);
+    background-color: var(--superficie);
 }
 .formatacao-secao {
     margin-left: auto;
@@ -310,10 +324,10 @@ main {
     display: grid;
     align-items: center;
     gap: 3rem;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1fr);
 }
 .secao-info {
-    grid-column: span 6 / span 6;
+    grid-column: span 1;
 }
 
 .num-secao {
@@ -331,7 +345,7 @@ main {
 }
 .secao-titulo {
     margin: 0;
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 8vw, 3.5rem);
     line-height: 1.2;
     font-weight: 600;
     color: var(--texto);
@@ -349,7 +363,7 @@ p {
     letter-spacing: -0.005em;
     font-weight: 400;
     line-height: 1.625;
-    color: var(--texto);
+    color: var(--texto-suave);
 }
 .secao-imagem {
     position: relative;
@@ -368,9 +382,9 @@ p {
     object-fit: cover;
     object-position: center;
 }
-
+/* =============  TIMELINE  =============*/
 /* #region TIMELINE */
-/* ===== TIMELINE — versão esquerda (before) ===== */
+/* -- versão esquerda -- */
 .timeline-vertical {
     position: relative;
     margin-top: 1.5rem;
@@ -437,7 +451,7 @@ p {
     color: var(--texto-suave);
 }
 
-/* ===== TIMELINE — versão direita (after) ===== */
+/* -- versão direita -- */
 .timeline-vertical--invertida::after {
     content: "";
     position: absolute;
@@ -470,8 +484,147 @@ p {
 .timeline-item--invertida .timeline-conteudo {
     text-align: right;
 }
+.timeline-vertical.timeline-vertical--invertida::before {
+    display: none;
+}
+
+.timeline-item.timeline-item--invertida::before {
+    display: none;
+}
 /* #endregion */
 
+/* =======  BARRAS COMPETENCIAS  ========*/
+/* #region COMPETENCIAS */
+.competencias-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    grid-column: span 1;
+}
+
+.competencia-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.competencia-nome {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--texto);
+    min-width: 0;
+    flex: 1 1 auto;
+}
+
+.competencia-nome .icon {
+    color: var(--verde-terciario);
+    font-size: 1.25rem;
+}
+
+.competencia-percentagem {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--verde-terciario);
+    flex-shrink: 0;
+}
+
+.competencia-barra {
+    width: 100%;
+    height: 0.625rem;
+    border-radius: 999px;
+    background-color: var(--verde-primario);
+    overflow: hidden;
+}
+
+.competencia-preenchimento {
+    height: 100%;
+    width: var(--percentagem);
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--verde-secundario), var(--verde-terciario));
+}
+
+.competencia-item--divertida .competencia-percentagem,
+.competencia-item--divertida .competencia-nome .icon {
+    color: var(--acento);
+}
+
+.competencia-item--divertida .competencia-preenchimento {
+    background: linear-gradient(90deg, var(--acento), var(--acento-suave));
+}
+/* #endregion */
+
+/* ===========  GRID HOBBIES  ===========*/
+/* #region HOBBIES */
+.hobby-lista {
+    display: grid;
+    gap: 1.75rem;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.hobby-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+    border-width: 1px;
+    border-color: var(--verde-terciario);
+    background-color: var(--superficie);
+    padding: 1.75rem;
+    gap: 1.25rem;
+}
+
+.hobby-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.75rem;
+    filter: drop-shadow(0 0 0.08rem var(--verde-terciario));
+    border-color: var(--verde-terciario);
+    background-color: var(--icon-fundo);
+}
+
+.hobby-icon .icon {
+    align-items: center;
+    font-size: 2rem;
+    color: var(--texto-suave);
+}
+
+.hobby-footer {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    color: var(--verde-terciario);
+}
+
+.hobby-footer:link {
+    color: var(--acento);
+}
+.hobby-footer:active {
+     color: var(--acento);
+}
+.hobby-item:hover {
+    .hobby-icon {
+    background-color: var(--acento);       
+    }
+    .hobby-footer {
+        color: var(--acento);
+    }
+}
+
+/* #endregion */
 
 /* Modo escuro */
 @media (prefers-color-scheme: dark) {
@@ -487,6 +640,7 @@ p {
         --acento-suave: #B5651D;
         --texto-acento: #191d17;
         --texto-acento-suave: #2f372b;
+        --icon-fundo: #253f32;
     }
 
     html {
@@ -546,5 +700,17 @@ p {
     }
     .secao-imagem {
         aspect-ratio: 5 / 4;
+    }
+    .grid-secao {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+    .secao-info {
+        grid-column: span 6 / span 6;
+    }
+    .competencias-lista {
+        grid-column: span 6 / span 6;
+    }
+    .hobby-lista {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
