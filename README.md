@@ -55,9 +55,3 @@ Tecnologias
 
 HTML5 · CSS3 · JavaScript (opcional)
 
-# \## Tecnologias
-
-# 
-
-# HTML5 · CSS3 · JavaScript (opcional)
-
