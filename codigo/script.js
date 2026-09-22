@@ -10,7 +10,7 @@ const observer = new IntersectionObserver((entradas) => {
             });
         }
     });
-}, { threshold: 0.5 });
+}, { rootMargin: "-50% 0px -50% 0px", threshold: 0 });
 
 secoes.forEach((secao) => observer.observe(secao));
 

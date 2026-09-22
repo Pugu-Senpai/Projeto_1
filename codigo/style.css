@@ -71,7 +71,9 @@ body {
     position: relative;
     border-radius: 50em;
     width: 15rem;
-    height: 15rem;
+    aspect-ratio: 1;
+    height: auto;
+    object-fit: cover;
     padding: 1rem;
     filter: drop-shadow(0 0 1rem var(--verde-terciario));
 }
@@ -84,7 +86,7 @@ body {
     width: 100%;
 }
 /* Portfólio e certificado */
-.info-portefolio {
+.info-portfolio {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -153,7 +155,6 @@ h1 {
 h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: var(--texto-suave);
     line-height: 1.5;
     letter-spacing: -0.01em;
     margin: 0; 
@@ -185,7 +186,7 @@ h3 {
 }
 
 /* ID Informação/COntactos */
-#pill {
+.pill {
     display: inline-flex;
     align-items: center;
     gap: 0.375rem;
@@ -294,7 +295,8 @@ a.download_cv:active {
 /* Definição nav */
 .nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-color: var(--verde-primario);
@@ -670,16 +672,17 @@ p {
     font-weight: 400;
     color: var(--verde-terciario);
     transition: color 0.2s ease;
+    transform: scale(1.15);    
 }
 
-.hobby-item:hover {
-    .hobby-icon {
-        transform: scale(1.15);
-    }
-    .hobby-footer {
-        color: var(--acento);
-    }
+.hobby-item:hover .hobby-icon {
+    transform: scale(1.15);
 }
+
+.hobby-item:hover .hobby-footer {
+    color: var(--acento);
+}
+
 
 .hobby-item:active {
     transform: scale(0.99);
@@ -932,6 +935,26 @@ p {
 
 /* #endregion */
 
+/*====================| SCROLLBAR |===================*/
+/* #region SCROLLBAR */
+.modal-caixa::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.modal-caixa::-webkit-scrollbar-track {
+    background-color: var(--verde-primario);
+    border-radius: 999px;
+}
+
+.modal-caixa::-webkit-scrollbar-thumb {
+    background-color: var(--acento-suave);
+    border-radius: 999px;
+}
+
+.modal-caixa::-webkit-scrollbar-thumb:hover {
+    background-color: var(--acento);
+}
+/* #endregion */
 
 /*==================| MODO ESCURO |===================*/
 /* #region MODO ESCURO */
@@ -992,9 +1015,6 @@ p {
 
     .avatar {
         width: 20rem;
-        height: 20rem;
-        width: 50%;
-        height: 50%;
     }
     
     .botoes {
