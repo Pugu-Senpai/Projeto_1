@@ -1,17 +1,18 @@
 :root {
-    --fundo: #faf0fa;
-    --superficie: #E9DFC9;
-    --rodape: #a59b85;
-    --verde-primario: #1B4332;
-    --verde-secundario: #255943;
-    --verde-terciario: #2D6A4F;
-    --texto: #22281F;
-    --texto-suave: #5C6B60;
-    --acento: #B5651D;
-    --acento-suave: #E08942;
-    --texto-acento: #22281F;
-    --texto-acento-suave: #384134;
-    --icon-fundo: #2e624c;
+    color-scheme: dark;
+    --fundo: #10201A;
+    --superficie: #1B2E22;
+    --rodape: #091612;
+    --verde-primario: #14261D;
+    --verde-secundario: #101d17;
+    --verde-terciario: #2b9161;
+    --texto: #EDE7DA;
+    --texto-suave: #A9B5AC;
+    --acento: #E08942;
+    --acento-suave: #B5651D;
+    --texto-acento: #191d17;
+    --texto-acento-suave: #2f372b;
+    --icon-fundo: #253f32;
 }
 
 * {
@@ -120,7 +121,7 @@ body {
     line-height: 1.3;
     letter-spacing: 0.04em;
     font-weight: 600;
-    color: var(--texto);
+    color: var(--texto-acento);
 }
 
 /* Simbolos e Icons */
@@ -955,47 +956,24 @@ p {
 }
 /* #endregion */
 
-/*==================| MODO ESCURO |===================*/
-/* #region MODO ESCURO */
-@media (prefers-color-scheme: dark) {
+/*==================| MODO CLARO |===================*/
+/* #region MODO CLARO */
+@media (prefers-color-scheme: light) {
     :root {
-        --fundo: #10201A;
-        --superficie: #1B2E22;
-        --rodape: #091612;
-        --verde-primario: #14261D;
-        --verde-secundario: #101d17;
-        --verde-terciario: #2b9161;
-        --texto: #EDE7DA;
-        --texto-suave: #A9B5AC;
-        --acento: #E08942;
-        --acento-suave: #B5651D;
-        --texto-acento: #191d17;
-        --texto-acento-suave: #2f372b;
-        --icon-fundo: #253f32;
-    }
-
-    html {
-        background-color: var(--fundo);
-    }
-
-    .certificado {
-        color: var(--verde-secundario);
-    }
-
-    a.download_cv {
-        color: var(--texto-acento);
-    }
-    a.download_cv:link {
-        color: var(--texto-acento);
-    }
-    a.download_cv:visited {
-        color: var(--texto-acento-suave);
-    }
-    a.download_cv:hover {
-        filter: drop-shadow(0 0 0.3125rem var(--acento-suave));
-    }
-    a.download_cv:active {
-        filter: drop-shadow(0 0 0.3125rem var(--acento-suave));
+        color-scheme: light;
+        --fundo: #F6F1E7;              /* creme quente */
+        --superficie: #ECE3D0;         /* areia */
+        --rodape: #DDD2BC;             /* areia escura */
+        --verde-primario: #E3ECE2;     /* verde muito claro (nav, barras) */
+        --verde-secundario: #CFE0D3;   /* verde sálvia */
+        --verde-terciario: #2D6A4F;    /* forest green */
+        --texto: #1E2A22;
+        --texto-suave: #4A5A4F;
+        --acento: #A4561A;             /* laranja queimado */
+        --acento-suave: #C8742E;
+        --texto-acento: #FFF8EE;       /* texto claro sobre o laranja */
+        --texto-acento-suave: #E8CFAE;
+        --icon-fundo: #D5E4D8;
     }
 }
 /* #endregion */
