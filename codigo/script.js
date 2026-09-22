@@ -13,3 +13,12 @@ const observer = new IntersectionObserver((entradas) => {
 }, { threshold: 0.5 });
 
 secoes.forEach((secao) => observer.observe(secao));
+
+/* SCRIPT PARA CLICAR FORA DO MODAL E FECHAR */
+document.querySelectorAll('.modal-overlay').forEach((overlay) => {
+    overlay.addEventListener('click', (evento) => {
+        if (evento.target === overlay) {
+            window.location.hash = '#!';
+        }
+    });
+});

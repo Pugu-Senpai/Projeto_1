@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" 
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=verified,mail,call,location_on,share,code,alternate_email,download,view_in_ar,palette,html,restaurant,two_wheeler,skillet,sports_esports,arrow_forward,close,arrow_upward,movie,music_note_2,travel,hiking" />
-
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!--     HEADER -->
-    <header class="header">
+    <header class="base-header">
         <!-- Cartão com toda informação + Navegação-->
         <div class="cartao-perfil">
             <!-- Topo Retrato + Informação -->
@@ -82,6 +82,7 @@
     <!-- MAIN -->
     <main>
         <div class="conteudo-secao">
+
             <!-- SEÇÃO 1 - SOBRE MIM -->
             <section id="sobre-mim" class="secao">
                 <div class="formatacao-secao">
@@ -97,10 +98,19 @@
                                 Sobre mim
                             </h2>
                             <p>
-                                Sou designer de produto focado na intersecção entre a precisão milimétrica do CAD paramétrico e a organicidade dos biomateriais. A minha prática equilibra rigor de engenharia (DFM, tolerâncias e simulação computacional) com a sensibilidade táctil necessária para criar objetos que envelhecem com dignidade.
+                                Desenhador 3D de formação, com experiência em SolidWorks, Photoshop, Illustrator, AutoCAD. 
+                                A par da vertente técnica e criativa, desenvolvi fortes capacidades de resolução de 
+                                problemas e gestão de pressão através da experiência prática no setor das ferragens e construção.
                             </p>
                             <p>
-                                Com formação académica pelas Belas Artes do Porto e certificações avançadas em SolidWorks e Rhinoceros/Grasshopper, dedico-me ao desenvolvimento de dispositivos físicos, iluminação modular e embalagens regenerativas concebidas para a economia circular.
+                                Sempre orientado para soluções eficazes e simplificadas, 
+                                sem perder o cuidado com o detalhe visual, estou agora a alargar as minhas competências para 
+                                a área tecnológica com o objetivo de as integrar com o que já sei fazer.
+                            </p>
+                            <p>
+                                O meu percurso na tecnologia ainda está em construção e estou a explorar diferentes áreas para perceber 
+                                onde me revejo mais mas o que procuro, em qualquer uma delas, é poder criar soluções 
+                                que outras pessoas possam usar de forma simples e eficaz
                             </p>
                         </div>
                         <!-- IMAGEM -->
@@ -112,6 +122,7 @@
                     </div>
                 </div>
             </section>
+
             <!-- SEÇÃO 2 - EDUCAÇÃO -->
             <section id="educacao" class="secao secao--invertida">
                 <div class="formatacao-secao">
@@ -159,7 +170,15 @@
                                         </div>
                                         <h3>Arte & Design</h3>
                                         <p class="timeline-instituicao">
-                                            EXEMPLO
+                                            Ao longo da Licenciatura em Arte & Design, contactei com um plano curricular amplo, 
+                                            que abrangeu tanto as Artes Plásticas (Escultura, Pintura, Cerâmica, entre outras) 
+                                            como o Design mais técnico. 
+                                        </p>
+                                        <p class="timeline-conteudo">
+                                            Foi precisamente nas disciplinas técnicas (Geometria Descritiva, Desenho Técnico, 
+                                            Desenho Digital 2D e Modelação Digital 3D) que tive o melhor desempenho, 
+                                            dando continuidade à afinidade que já demonstrava desde o Ensino Secundário 
+                                            por esta vertente mais analítica e precisa.
                                         </p>
                                     </div>
                                  </div>
@@ -184,12 +203,21 @@
                                             <span class="num num-modal">Período</span>
                                             <span class="timeline-data">Setembro 2010 - Julho 2013</span>
                                         </div>
-                                        <div class="secao-imagem">
-                                            <img class="imagem imagem-contida" src="../imagens/escola_emidio_garcia.png" alt="ServiceNow & Deloitte">
-                                        </div>
+                                        <figure class="figura-modal">
+                                            <img class="imagem" src="../imagens/escola_emidio_garcia.png" alt="ServiceNow & Deloitte">
+                                            <figcaption class="caption">Escola Secundária Emídio Garcia</figcaption>
+                                        </figure>
                                         <h3>Artes Visuais</h3>
                                         <p class="timeline-instituicao">
-                                            EXEMPLO
+                                            Segui Artes Visuais pela vertente técnica, mais do que pela artística. 
+                                        </p>
+                                        <p class="timeline-instituicao">
+                                            A Geometria Descritiva foi, nesse sentido, a disciplina que melhor se identificou comigo. 
+                                            O percurso passou por um trabalho consistente em desenho, matemática e geometria.
+                                        </p>
+                                        <p class="timeline-instituicao">
+                                            Entre Design e Arquitetura, foi o Design que acabei por escolher para 
+                                            dar seguimento ao meu percurso académico.
                                         </p>
                                     </div>
                                  </div>
@@ -199,6 +227,7 @@
                     </div>
                 </div>
             </section>
+
             <!-- SEÇÃO 3 - EXPERIENCIA -->
             <section id="experiencia" class="secao">
                 <div class="formatacao-secao">
@@ -220,7 +249,7 @@
                                     <div class="timeline-conteudo">
                                         <span class="timeline-data">2026 - Presente</span>
                                             <a class="timeline-link" href="#modal-servicenow">
-                                                <h3 class="timeline-titulo">Formando UpSkill</h3>
+                                                <h3 class="timeline-titulo">Formando no UpSkill</h3>
                                             </a>
                                         <p class="timeline-instituicao">Deloitte</p>
                                     </div>
@@ -231,14 +260,25 @@
                                         <a href="#!" class="modal-fechar" aria-label="Fechar">
                                             <span class="icon">close</span>
                                         </a>
-                                        <span class="num">Período </span>
-                                        <span class="timeline-data">Julho 2026 - Presente</span>
-                                        <div class="secao-imagem">
-                                            <img class="imagem imagem-contida" src="../imagens/promo-servicenow-deloitte.png" alt="ServiceNow & Deloitte">
+                                        <div class="secao-info">
+                                            <span class="num num-modal">Período </span>
+                                            <span class="timeline-data">Julho 2026 - Presente</span>
                                         </div>
-                                        <h3>Formando ServiceNow</h3>
+                                        <figure class="figura-modal">
+                                            <img class="imagem-contida" src="../imagens/promo-servicenow-deloitte.png" alt="ServiceNow & Deloitte">
+                                            <figcaption class="caption">Formação em ServiceNow para Deloitte</figcaption>
+                                        </figure>
+                                        <h3>Formação em ServiceNow</h3>
                                         <p class="timeline-instituicao">
-                                            EXEMPLO
+                                            Após um percurso alargado na área das ferragens, e reconhecendo que a área de design 
+                                            não tinha dado os resultados que procurava, senti que era altura de seguir novos caminhos. 
+                                        </p>
+                                        <p class="timeline-instituicao">
+                                            Sempre tive maior afinidade com a vertente técnica do que com a artística, e foi essa 
+                                            afinidade que me levou a candidatar-me ao programa UpSkill, numa área mais próxima da 
+                                            tecnologia, processo em que fui selecionado. A decisão foi motivada pela vontade de 
+                                            continuar a desenvolver as competências que já possuía e de adquirir novas, respondendo 
+                                            a um interesse constante em aprender.
                                         </p>
                                     </div>
                                  </div>
@@ -263,12 +303,24 @@
                                             <span class="num num-modal">Período</span>
                                             <span class="timeline-data">Janeiro 2018 - Julho 2026</span>
                                         </div>
-                                        <div class="secao-imagem">
-                                            <img class="imagem imagem-contida" src="../imagens/armazem_ferragens.jpeg" alt="Armazém de Ferragens">
-                                        </div>
+                                        <figure class="figura-modal">
+                                            <img class="imagem-contida" src="../imagens/armazem_ferragens.jpeg" alt="Armazém de Ferragens">
+                                            <figcaption class="caption">Exemplo de Armazém de Ferragens</figcaption>
+                                        </figure>
                                         <h3>Caixeiro de 1º</h3>
                                         <p class="timeline-instituicao">
-                                            Atendimento personalizado a clientes profissionais e particulares, com aconselhamento técnico sobre ferramentas e materiais de construção. Responsável pela gestão de stock, reposição de produtos e organização da loja, desenvolvendo competências de comunicação, resolução de problemas e trabalho sob pressão em contacto direto com o público.
+                                            O trabalho numa loja envolveu atendimento personalizado a clientes profissionais e 
+                                            particulares, com aconselhamento técnico sobre ferramentas e materiais de construção. 
+                                        </p>
+                                        <p class="timeline-instituicao">
+                                            A experiência de vendas variou entre situações simples e casos que exigiam resolução 
+                                            ativa de problemas, quer na loja quer no apoio ao cliente fora dela.
+                                        </p>
+                                        <p class="timeline-instituicao">
+                                            Tinha ainda polivalência total na área da logística, responsável pela receção e 
+                                            envio de mercadoria, inventário e organização geral do espaço. 
+                                            Foi um contexto exigente que desenvolveu de forma sólida as minhas competências de 
+                                            comunicação, resolução de problemas e trabalho sob pressão.
                                         </p>
                                     </div>
                                  </div>
@@ -293,12 +345,26 @@
                                             <span class="num num-modal">Período</span>
                                             <span class="timeline-data">Março 2017 - Dezembro 2017</span>
                                         </div>
-                                        <div class="secao-imagem">
-                                            <img class="imagem imagem-contida" src="../imagens/cad_parque.jpeg" alt="ServiceNow & Deloitte">
-                                        </div>
+                                        <figure class="figura-modal">
+                                            <img class="imagem-contida" src="../imagens/cad_parque.jpeg" alt="ServiceNow & Deloitte">
+                                            <figcaption class="caption">Exemplo projeto em Solidworks</figcaption>
+                                        </figure>
                                         <h3>Desenhador 3D</h3>
                                         <p class="timeline-instituicao">
-                                            EXEMPLO
+                                            Realizei o estágio profissional como Desenhador 3D na Bricantel, em Bragança, 
+                                            empresa dedicada ao desenvolvimento de mobiliário urbano, desde parques infantis, 
+                                            iluminárias, bancos e papeleiras.
+                                        </p>
+                                        <p class="timeline-instituicao">
+                                            Neste contexto, aprofundei significativamente as minhas competências em modelação 3D, 
+                                            em particular no SolidWorks, trabalhando na resolução de problemas técnicos de acordo 
+                                            com a norma europeia. O trabalho abrangeu desde pequenos modelos até projetos completos, 
+                                            com produção de desenhos técnicos e fichas técnicas de produto.
+                                        </p>
+                                        <p class="timeline-instituicao">
+                                            Para além do trabalho de escritório, acompanhei também o desenvolvimento em ambiente 
+                                            de produção, o que me permitiu compreender o processo de forma integrada. 
+                                            Foi ainda a minha primeira experiência de trabalho em equipa num contexto profissional.
                                         </p>
                                     </div>
                                  </div>
@@ -314,6 +380,7 @@
                     </div>  
                 </div>
             </section>
+
             <!-- SEÇÃO 4 - COMPETÊNCIAS -->
             <section id="competencias" class="secao secao--invertida">
                 <div class="formatacao-secao">
@@ -326,7 +393,7 @@
                                 <div class="competencia-cabecalho">
                                     <span class="competencia-nome">
                                         <span class="icon">view_in_ar</span>
-                                        Modelação 3D / CAD (SolidWorks)
+                                        Modelação 3D / CAD
                                     </span>
                                     <span class="competencia-percentagem">70%</span>
                                 </div>
@@ -340,12 +407,49 @@
                                     <a href="#!" class="modal-fechar" aria-label="Fechar">
                                         <span class="icon">close</span>
                                     </a>
-                                    <span class="num num-modal">Nível de confiança</span>
-                                    <span class="timeline-data">70%</span>
-                                    <h3>Modelação 3D / CAD (SolidWorks)</h3>
-                                    <p>
-                                        EXEMPLO — descreve aqui em que contextos usaste SolidWorks (estágio, projetos académicos, tipo de peças/protótipos desenhados), certificações relevantes, e o nível real de autonomia que tens na ferramenta.
+                                    <div class="secao-info">
+                                        <span class="num num-modal">Nível de confiança</span>
+                                        <span class="timeline-data">70%</span>
+                                    </div>
+                                    <h3>Modelação 3D / CAD</h3>
+                                    <p class="modal-item-texto">
+                                        Ao longo do meu percurso, trabalhei com diversos programas de software vocacionados 
+                                        para a modelação 3D e o desenho técnico, ferramentas que se revelaram fundamentais 
+                                        para resolver problemas e concluir projetos com rigor. 
                                     </p>
+                                    <p class="modal-item-texto">
+                                        Esta experiência foi construída 
+                                        de forma contínua, desde a Licenciatura em Arte & Design até ao estágio profissional 
+                                        na Bricantel, consolidando um nível de autonomia sólido no desenvolvimento de peças e 
+                                        projetos técnicos.
+                                    </p>
+                                    <div class="modal-item-caixa">
+                                        <!-- SolidWorks -->
+                                        <div class="modal-item-imagem">
+                                            <img class="competencia-software-logo" src="../imagens/solidworks.svg" alt="Software SolidWorks" fill="currentColor">
+                                            <p class="modal-item-texto">
+                                                Principal ferramenta de modelação 3D paramétrica que utilizo, aplicada ao 
+                                                desenvolvimento de peças e projetos técnicos, desde o conceito inicial até 
+                                                ao desenho técnico final.
+                                        </p>
+                                        </div>
+                                        <!-- Keyshot -->
+                                        <div class="modal-item-imagem">
+                                            <img class="competencia-software-logo" src="../imagens/KeyShot.svg" alt="Software Keyshot">
+                                            <p class="modal-item-texto">
+                                                Utilizado para a renderização de modelos 3D, aplicada a catálogos, fichas técnicas, 
+                                                materiais publicitários e apresentações a clientes.
+                                            </p>
+                                        </div>
+                                        <!-- AutoCAD -->
+                                        <div class="modal-item-imagem">
+                                            <img class="competencia-software-logo" src="../imagens/autodesk.svg" alt="Software AutoCAD">
+                                            <p class="modal-item-texto">
+                                                Software de modelação 3D com o qual tenho contacto por iniciativa própria, 
+                                                usado em projetos pessoais fora do contexto de trabalho.
+                                        </p>
+                                        </div>                                         
+                                    </div>
                                 </div>
                             </div>
 
@@ -354,7 +458,7 @@
                                 <div class="competencia-cabecalho">
                                     <span class="competencia-nome">
                                         <span class="icon">palette</span>
-                                        Software de Design Gráfico (Photoshop, Illustrator)
+                                        Software de Design Gráfico
                                     </span>
                                     <span class="competencia-percentagem">55%</span>
                                 </div>
@@ -368,12 +472,38 @@
                                     <a href="#!" class="modal-fechar" aria-label="Fechar">
                                         <span class="icon">close</span>
                                     </a>
-                                    <span class="num num-modal">Nível de confiança</span>
-                                    <span class="timeline-data">55%</span>
-                                    <h3>Software de Design Gráfico (Photoshop, Illustrator)</h3>
+                                    <div class="secao-info">
+                                        <span class="num num-modal">Nível de confiança</span>
+                                        <span class="timeline-data">55%</span>
+                                    </div>
+                                    <h3>Software de Design Gráfico</h3>
                                     <p>
-                                        EXEMPLO — descreve aqui em que contextos usaste SolidWorks (estágio, projetos académicos, tipo de peças/protótipos desenhados), certificações relevantes, e o nível real de autonomia que tens na ferramenta.
+                                        Software de ilustração e design gráfico com que trabalho na criação e edição de imagem, 
+                                        aplicado a projetos pessoais, académicos e profissionais. Ao longo do percurso, 
+                                        tive ainda oportunidade de utilizar estas ferramentas em trabalhos freelancer, 
+                                        respondendo a pedidos concretos de clientes em diferentes áreas.
                                     </p>
+                                    <div class="modal-item-caixa">
+
+                                        <!-- Photoshop -->
+                                        <div class="modal-item-imagem">
+                                            <img class="competencia-software-logo no-glow" src="../imagens/Adobe_Photoshop_CC_icon.svg.webp" alt="Software Adobe Photshop">
+                                            <p class="modal-item-texto">
+                                                Ferramenta de edição de imagem que utilizo para retoque, composição e preparação de peças 
+                                                gráficas, desde imagens de produto até materiais para apresentações.
+                                        </p>
+                                        </div>
+
+                                        <!-- Ilustrator -->
+                                        <div class="modal-item-imagem">
+                                            <img class="competencia-software-logo no-glow" src="../imagens/Adobe-illustrator-icon.svg.webp" alt="Software Adobe Illustrator">
+                                            <p class="modal-item-texto">
+                                                Software de desenho vetorial que utilizo na criação de ilustrações e elementos gráficos, 
+                                                aplicado a projetos de design e a trabalhos realizados como freelancer.
+                                            </p>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
 
@@ -382,7 +512,7 @@
                                 <div class="competencia-cabecalho">
                                     <span class="competencia-nome">
                                         <span class="icon">code</span>
-                                        Programação (JavaScript, Python)
+                                        Programação
                                     </span>
                                     <span class="competencia-percentagem">30%</span>
                                 </div>
@@ -396,16 +526,35 @@
                                     <a href="#!" class="modal-fechar" aria-label="Fechar">
                                         <span class="icon">close</span>
                                     </a>
-                                    <span class="num num-modal">Nível de confiança</span>
-                                    <span class="timeline-data">30%</span>
-                                    <h3>Programação (JavaScript, Python)</h3>
-                                    <p>
-                                        EXEMPLO — descreve aqui em que contextos usaste SolidWorks (estágio, projetos académicos, tipo de peças/protótipos desenhados), certificações relevantes, e o nível real de autonomia que tens na ferramenta.
+                                    <div class="secao-info">
+                                        <span class="num num-modal">Nível de confiança</span>
+                                        <span class="timeline-data">30%</span>
+                                    </div>
+                                    <h3>Programação</h3>
+                                    <p class="modal-item-texto">
+                                        Competência que estou a construir de forma progressiva, começando pelos fundamentos 
+                                        de algoritmia e programação, passando por bases de dados e programação funcional, 
+                                        e encontrando-me neste momento no módulo de JavaScript. 
                                     </p>
+                                    <p class="modal-item-texto">
+                                        Esta sequência tem-me permitido consolidar a lógica de programação antes de a aplicar a 
+                                        projetos de HTML e CSS.
+                                    </p>
+
+                                    <!-- JavaScript -->
+                                    <div class="modal-item-imagem">
+                                        <img class="competencia-software-logo" src="../imagens/javascript.svg" alt="Software JavaScript">
+                                        <p class="modal-item-texto">
+                                            Atualmente em estudo, dedicado a consolidar conhecimentos de programação funcional e 
+                                            interatividade, aplicados ao desenvolvimento de projetos web.
+                                    </p>
+                                    </div>
+
+
                                 </div>
                             </div>
 
-
+                            <!-- 4 - HTML & CSS -->
                             <a class="competencia-item" href="#modal-html">
                                 <div class="competencia-cabecalho">
                                     <span class="competencia-nome">
@@ -430,8 +579,30 @@
                                     </div>
                                     <h3>HTML & CSS</h3>
                                     <p>
-                                        EXEMPLO — descreve aqui em que contextos usaste SolidWorks (estágio, projetos académicos, tipo de peças/protótipos desenhados), certificações relevantes, e o nível real de autonomia que tens na ferramenta.
+                                        Base do desenvolvimento web que utilizo na construção de páginas, 
+                                        desde a marcação semântica em HTML até à estilização e ao layout responsivo em CSS. 
+                                        A aplicação prática de Flexbox e Grid tem permitido resolver desafios de organização 
+                                        e adaptabilidade, num processo de aprendizagem contínua materializado neste projeto de 
+                                        currículo.
                                     </p>
+
+                                    <!-- HTML -->
+                                    <div class="modal-item-imagem">
+                                        <img class="competencia-software-logo" src="../imagens/html5.svg" alt="Software HTML 5">
+                                        <p class="modal-item-texto">
+                                            Base da construção de páginas web, utilizada para organizar conteúdo de forma semântica 
+                                            e acessível, com aplicação prática em projetos pessoais.
+                                        </p>
+                                    </div>
+
+                                    <!-- CSS -->
+                                    <div class="modal-item-imagem">
+                                        <img class="competencia-software-logo" src="../imagens/css.svg" alt="Software CSS 3">
+                                        <p class="modal-item-texto">
+                                            Utilizado para dar forma visual e responsividade a páginas web, aplicando Flexbox e 
+                                            Grid na construção de layouts adaptáveis.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
 
@@ -453,6 +624,7 @@
                     </div>
                 </div>
             </section> 
+
             <!-- SEÇÃO 5 - HOBBY -->   
             <section id="hobbies" class="secao">
                 <div class="formatacao-secao">
@@ -468,10 +640,13 @@
                                 Hobbies & Paixões Pessoais
                             </h2>
                             <p>
-                                EXEMPLO
+                                Fora do contexto de trabalho e estudo, gosto de dedicar tempo a interesses que me trazem 
+                                bem-estar e novas perspetivas.
                             </p>
                             <p>
-                                EXEMPLO
+                                Motas, jogos, culinária, viagens, filmes, séries e boa música fazem parte do meu quotidiano, 
+                                contribuindo para um equilíbrio saudável entre a vida pessoal e profissional, e alimentando 
+                                uma curiosidade constante por coisas novas.
                             </p>
                         </div>
                     </div>
@@ -486,10 +661,11 @@
                                 Motociclismo
                             </h3>
                             <p>
-                                Fascinio por motrização clássica e viagens pelas estradas cênicas de Portugal e Galiza.
+                                Gosto especial por motas clássicas, tanto pelo design como pela história de cada modelo, 
+                                aliado ao interesse em manter a mota em bom estado através de manutenção regular.
                             </p>
                             <div class="hobby-footer">
-                                <span>Mundo Clássico</span>
+                                <span>Mundo de duas rodas</span>
                                 <span class="icon">arrow_forward</span>    
                             </div>
                         </a> 
@@ -499,9 +675,18 @@
                                 <a href="#!" class="modal-fechar" aria-label="Fechar">
                                     <span class="icon">close</span>
                                 </a>
+                                <figure class="figura-modal">
+                                    <img class="imagem-contida" src="../imagens/moto_honda.webp" alt="Motociclo Honda GB350S">
+                                    <figcaption class="caption">Honda GB350S</figcaption>
+                                </figure>
                                 <h3>Mundo de duas rodas</h3>
-                                <p>
-                                    EXEMPLO — mais detalhe sobre motociclismo clássico, rotas favoritas, modelos que gostas, etc.
+                                <p class="modal-item-texto">
+                                    A minha mota atual é uma Honda GB350S, um modelo recente que reproduz o visual clássico que 
+                                    tanto aprecio. Faço eu próprio toda a manutenção, o que torna esta paixão ainda mais pessoal.
+                                </p>
+                                <p class="modal-item-texto">
+                                    Como projeto futuro, gostava de adquirir uma Honda CB500 dos anos 50 para restaurar e 
+                                    transformar ao meu gosto, dando uma segunda vida a uma mota com história.
                                 </p>
                             </div>
                          </div>
@@ -515,10 +700,11 @@
                                 Culinária
                             </h3>
                             <p>
-                                EXEMPLO CULINARIA
+                                Paixão por cozinhar e experimentar pratos de várias culturas, 
+                                descobrindo novos sabores e formas de os preparar.
                             </p>
                             <div class="hobby-footer">
-                                <span>Gastronomia & Vinho</span>
+                                <span>Sabores favoritos</span>
                                 <span class="icon">arrow_forward</span>    
                             </div>
                         </a> 
@@ -528,9 +714,25 @@
                                 <a href="#!" class="modal-fechar" aria-label="Fechar">
                                     <span class="icon">close</span>
                                 </a>
+                                <figure class="figura-modal">
+                                    <img class="imagem-contida" src="../imagens/birria_tacos.jpg" alt="Birria Tacos">
+                                    <figcaption class="caption">Rick Bayless Birria Tacos</figcaption>
+                                </figure>
                                 <h3>Saborear sensações</h3>
-                                <p>
-                                    EXEMPLO — mais detalhe sobre culinaria, pratos e estilos favoritos.
+                                <p class="modal-item-texto">
+                                    Gosto especialmente de cozinhar pratos das culturas asiáticas, como a chinesa, 
+                                    a japonesa e a coreana, da cultura mexicana e, claro, da nossa cozinha tradicional 
+                                    portuguesa.
+                                </p>
+                                <p class="modal-item-texto">
+                                    Dependendo da vontade e do tempo disponível, cozinho desde pratos simples a receitas mais 
+                                    trabalhadas. Entre os meus favoritos contam-se o frango churrasco, o arroz de pato e a dobrada, 
+                                    o chop suey, o ramen, o sushi e o topokki, e ainda as enchiladas, os nachos e os tacos, além de 
+                                    pratos de outras culturas não referidos aqui.
+                                </p>
+                                <p class="modal.modal-item-texto">
+                                    Não consigo apontar um único preferido, mas se tivesse de escolher um guilty pleasure, 
+                                    seria o birria taco.
                                 </p>
                             </div>
                          </div>                          
@@ -544,10 +746,11 @@
                                 Tabuleiros & Vídeojogos
                             </h3>
                             <p>
-                                EXEMPLOS JOGOS
+                                Gosto por jogos, de tabuleiro e digitais, unindo o convívio à imersão e 
+                                estratégia proporcionadas.
                             </p>
                             <div class="hobby-footer">
-                                <span>Perfil Steam</span>
+                                <span>Experiência Virtual</span>
                                 <span class="icon">arrow_forward</span>    
                             </div>
                         </a> 
@@ -557,9 +760,66 @@
                                 <a href="#!" class="modal-fechar" aria-label="Fechar">
                                     <span class="icon">close</span>
                                 </a>
+                                <figure class="figura-modal">
+                                    <img class="imagem-contida" src="../imagens/battlefield.webp" alt="Video Jogo Battlefield 4">
+                                    <figcaption class="caption">Vídeo Jogo Battlefield 4</figcaption>
+                                </figure>                                
                                 <h3>Experiência Virtual</h3>
-                                <p>
-                                    EXEMPLO — mais detalhe sobre jogos, consolas, pcs, tabuleiros.
+                                <p class="modal-item-texto">
+                                    Jogo de tabuleiro não é sobre ter um favorito, mas sim sobre o convívio e a 
+                                    diversão que estes momentos trazem. Interesso-me também por D&D e Warhammer 40K, 
+                                    ainda que sejam universos que ainda não explorei a fundo.
+                                </p>
+                                <p class="modal-item-texto">
+                                    No mundo dos videojogos, jogo principalmente em PC, com predileção por jogos de 
+                                    estratégia com foco em building e gestão, como Factorio e Satisfactory, e por 
+                                    roguelikes, como The Binding of Isaac e Hades. Géneros como MMORPG e FPS, representados 
+                                    por Guild Wars 2 e Battlefield, marcaram mais o meu passado enquanto jogador.
+                                </p>
+
+                                <!-- Factorio -->
+                                <div class="modal-item-imagem">
+                                    <img class="competencia-software-logo no-glow" src="../imagens/factorio.png" alt="Vídeo Jogo Factorio">
+                                    <p class="modal-item-texto">
+                                        Factorio, jogo de construção e automação que junta estratégia e gestão de recursos. 
+                                        A satisfação de construir fábricas cada vez mais eficientes, resolvendo problemas 
+                                        de logística e produção, é o que mais me prende neste jogo.
+                                    </p>
+                                </div> 
+
+                                <!-- Satisfactory -->
+                                <div class="modal-item-imagem">
+                                    <img class="competencia-software-logo no-glow" src="../imagens/satisfactory.png" alt="Vídeo Jogo Satisfactory">
+                                    <p class="modal-item-texto">
+                                        Satisfactory, uma espécie de Factorio em 3D, com foco em automação e gestão de recursos 
+                                        em primeira pessoa, onde a exploração e a construção de fábricas complexas andam de mãos 
+                                        dadas.
+                                    </p>
+                                </div> 
+                                
+                                <!-- The Binding of Isaac -->
+                                <div class="modal-item-imagem">
+                                    <img class="competencia-software-logo no-glow" src="../imagens/isaac.png" alt="Vídeo Jogo The Binding of Isaac">
+                                    <p class="modal-item-texto">
+                                        The Binding of Isaac, jogo roguelike onde cada partida é diferente, 
+                                        graças à geração aleatória de níveis e a centenas de itens que alteram 
+                                        completamente a forma de jogar.
+                                    </p>
+                                </div> 
+                                
+                                <!-- Guild Wars 2 -->
+                                <div class="modal-item-imagem">
+                                    <img class="competencia-software-logo no-glow" src="../imagens/gw2.png" alt="Vídeo Jogo Guild Wars 2">
+                                    <p class="modal-item-texto">
+                                        Guild Wars 2, MMORPG que joguei bastante no passado, 
+                                        destacando-se pela exploração de um mundo aberto e pela vertente social do 
+                                        jogo em conjunto com outros jogadores.
+                                    </p>
+                                </div>
+                                
+                                
+                                <p class="modal-item-texto">
+                                    Deixo abaixo o link para o meu perfil de Steam, para quem quiser jogar comigo.
                                 </p>
                                 <a aria-label="Perfil de Steam" href="https://steamcommunity.com/id/pugusenpai/" target="_blank" rel="noopener noreferrer">Perfil Steam</a>
                             </div>
@@ -573,10 +833,12 @@
                                 Filmes & Séries
                             </h3>
                             <p>
-                                Exemplo de filmes e series favoritos
+                                Gosto especial por fantasia, sci-fi, comédia e ação, tanto em filmes como em séries. 
+                                A mistura entre histórias que estimulam a imaginação e momentos mais descontraídos 
+                                torna este um dos meus hobbies favoritos para relaxar.
                             </p>
                             <div class="hobby-footer">
-                                <span>Cinematografia</span>
+                                <span>Histórias que me prendem</span>
                                 <span class="icon">arrow_forward</span>    
                             </div>
                         </a> 
@@ -586,10 +848,86 @@
                                 <a href="#!" class="modal-fechar" aria-label="Fechar">
                                     <span class="icon">close</span>
                                 </a>
-                                <h3>Cinematografia</h3>
+                                <figure class="figura-modal">
+                                    <img class="imagem-contida" src="../imagens/lort_scene.png" alt="Cena do filme Senhor dos Anéis - As duas torres">
+                                    <figcaption class="caption">Cena do filme "Senhor dos Anéis: As Duas Torres"</figcaption>
+                                </figure>                                 
+                                <h3>Histórias que me prendem</h3>
                                 <p>
-                                    Exemplo de descrição de filmes e series 
+                                    Gravito sobretudo à volta de fantasia, ficção científica, comédia e terror, 
+                                    tanto em filmes e séries como em animes, que também acompanho com regularidade. 
                                 </p>
+                                <p>
+                                    Nos filmes, alguns dos meus favoritos são O Senhor dos Anéis, Interstellar, 
+                                    Alien, Constantine e John Wick. Nas séries, Breaking Bad e The Office 
+                                    ocupam um lugar especial. Já nos animes, os que mais aprecio são Bleach, 
+                                    Shingeki no Kyojin, Fullmetal Alchemist Brotherhood e Berserk.
+                                </p>
+
+                                <!-- LotR -->
+                                <div class="modal-item-imagem">
+                                    <img class="competencia-software-logo no-glow" src="../imagens/lotr.png" alt="Filme Senhor dos Anéis">
+                                    <p class="modal-item-texto">
+                                        O Senhor dos Anéis, trilogia que ajudou a moldar o meu interesse por fantasia, 
+                                        entre a riqueza do mundo criado e a profundidade das personagens.
+                                    </p>
+                                </div>
+                                
+                                <!-- Interstellar -->
+                                <div class="modal-item-imagem">
+                                    <img class="competencia-software-logo no-glow" src="../imagens/interstellar.jpg" alt="Filme Interstellar">
+                                    <p class="modal-item-texto">
+                                        Interstellar, referência do género de ficção científica para mim, 
+                                        entre a exploração espacial e uma narrativa carregada de emoção.
+                                    </p>
+                                </div>
+
+                                <!-- Alien -->
+                                <div class="modal-item-imagem">
+                                    <img class="competencia-software-logo no-glow" src="../imagens/alien.jpg" alt="Filme Alien">
+                                    <p class="modal-item-texto">
+                                        Alien, referência incontornável quando se junta ficção científica a terror, 
+                                        e um dos meus filmes favoritos nesse cruzamento de géneros.
+                                    </p>
+                                </div>
+                                
+                                <!-- Breaking Bad -->
+                                <div class="modal-item-imagem">
+                                    <img class="competencia-software-logo no-glow" src="../imagens/breaking_bad.webp" alt="Série Breaking Bad">
+                                    <p class="modal-item-texto">
+                                        Breaking Bad, série de referência para mim, com uma narrativa envolvente e uma transformação 
+                                        de personagem poucas vezes igualada.
+                                    </p>
+                                </div>
+                                
+                                <!-- The Office -->
+                                <div class="modal-item-imagem">
+                                    <img class="competencia-software-logo no-glow" src="../imagens/the_office.webp" alt="Série The Office">
+                                    <p class="modal-item-texto">
+                                        The Office, uma das minhas séries de comédia favoritas, sempre pronta para 
+                                        uma boa dose de humor e personagens memoráveis.
+                                    </p>
+                                </div>
+                                
+                                <!-- Bleach -->
+                                <div class="modal-item-imagem">
+                                    <img class="competencia-software-logo no-glow" src="../imagens/bleach.webp" alt="Anime Bleach">
+                                    <p class="modal-item-texto">
+                                        Bleach, anime que acompanho com grande carinho, 
+                                        com combates marcantes e um universo sobrenatural muito bem construído.
+                                    </p>
+                                </div>
+                                
+                                <!-- Shingeki no Kyojin -->
+                                <div class="modal-item-imagem">
+                                    <img class="competencia-software-logo no-glow" src="../imagens/shingeki_no_kyojin.jpg" alt="Anime Shingeki no Kyojin">
+                                    <p class="modal-item-texto">
+                                        Shingeki no Kyojin, anime que se destaca pela tensão narrativa e pela forma como 
+                                        vai revelando o seu universo ao longo das temporadas.
+                                    </p>
+                                </div>
+                                
+                                
                             </div>
                         </div>
                         <!-- 5 - HOBBY MUSIC -->
@@ -601,7 +939,8 @@
                                 Música
                             </h3>
                             <p>
-                                GOSTO PELA MUSICA
+                                Preferência clara por rock, metal e grunge, sons que me 
+                                acompanham desde a adolescência até hoje.
                             </p>
                             <div class="hobby-footer">
                                 <span>Álbuns</span>
@@ -618,6 +957,17 @@
                                 <p>
                                     Exemplo de descrição de generos de musica
                                 </p>
+
+                                <!-- SOAD -->
+                                <div class="modal-item-imagem">
+                                    <img class="competencia-software-logo no-glow" src="../imagens/soad.webp" alt="Banda System of a Down">
+                                    <p class="modal-item-texto">
+                                        Shingeki no Kyojin, anime que se destaca pela tensão narrativa e pela forma como 
+                                        vai revelando o seu universo ao longo das temporadas.
+                                    </p>
+                                </div>
+
+
                             </div>
                         </div>
 
@@ -652,10 +1002,12 @@
                         
                     </div>
                 </div>
-            </section>        
+            </section>  
+
         </div>
     </main>
-    <footer class="footer">
+
+    <footer class="base-footer">
         <div class="formatacao-secao footer-conteudo">
             <!-- Seção Esquerda - Informação -->
             <div class="footer-info">
@@ -697,6 +1049,5 @@
         </div>
 
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
