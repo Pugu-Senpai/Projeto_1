@@ -651,7 +651,7 @@ p {
     filter: drop-shadow(0 0 0.08rem var(--verde-terciario));
     border-color: var(--verde-terciario);
     background-color: var(--icon-fundo);
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .hobby-icon .icon {
@@ -671,8 +671,7 @@ p {
     letter-spacing: 0.02em;
     font-weight: 400;
     color: var(--verde-terciario);
-    transition: color 0.2s ease;
-    transform: scale(1.15);    
+    transition: color 0.2s ease;    
 }
 
 .hobby-item:hover .hobby-icon {
