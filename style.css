@@ -956,6 +956,15 @@ p {
 }
 /* #endregion */
 
+/*====================| VIDEO |===================*/
+
+.video-modal {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border-radius: 1rem;
+}
+
 /*==================| MODO CLARO |===================*/
 /* #region MODO CLARO */
 @media (prefers-color-scheme: light) {

@@ -1,3 +1,4 @@
+/* SCRIPT PARA MUDAR A COR DAS SEÇÕES NA NAV */
 const secoes = document.querySelectorAll("section");
 const linksNav = document.querySelectorAll(".text-nav");
 
@@ -20,5 +21,14 @@ document.querySelectorAll('.modal-overlay').forEach((overlay) => {
         if (evento.target === overlay) {
             window.location.hash = '#!';
         }
+    });
+});
+
+/* SCRIPT PARA PAUSAR VÍDEOS DO YOUTUBE AO FECHAR O MODAL */
+window.addEventListener("hashchange", () => {
+    document.querySelectorAll(".modal-overlay:not(:target) iframe").forEach((video) => {
+        video.contentWindow.postMessage(
+            '{"event":"command","func":"pauseVideo","args":""}', "*"
+        );
     });
 });
