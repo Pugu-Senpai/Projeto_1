@@ -27,6 +27,7 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     scroll-behavior: smooth;
+    scrollbar-gutter: stable;
 }
 
 html:has(.modal-overlay:target) {
@@ -968,6 +969,32 @@ p {
     height: auto;
     border-radius: 1rem;
     flex-shrink: 0;
+}
+
+.competencia-nome::after,
+.timeline-titulo::after {
+    content: "arrow_forward";
+    font-family: "Material Symbols Outlined";
+    font-weight: normal;
+    font-size: 1.1rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.25rem;
+    color: var(--acento);
+    transition: transform 0.2s ease;
+}
+
+.competencia-item:hover .competencia-nome::after,
+.timeline-link:hover .timeline-titulo::after {
+    transform: translateX(0.25rem);
+}
+
+.competencia-item:focus-visible,
+.timeline-link:focus-visible,
+.hobby-item:focus-visible {
+    outline: 2px solid var(--acento);
+    outline-offset: 4px;
+    border-radius: 0.5rem;
 }
 
 /*==================| MODO CLARO |===================*/
