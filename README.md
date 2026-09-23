@@ -18,7 +18,7 @@ Estrutura de ficheiros
 ---
 Funcionalidades (HTML & CSS)
 
-HTML semântico: `header`, `nav`, `main`, `section`, `figure`, `figcaption`, `footer`
+HTML semântico: `header`, `nav`, `main`, `section`, `figure`, `figcaption`, `footer`, `iframe`
 Layout responsivo (mobile first) com um breakpoint aos `768px`
 CSS Grid (grelha de 12 colunas e grelha de hobbies) e Flexbox (cabeçalho, navegação, rodapé)
 Variáveis CSS (`:root`) para toda a paleta de cores
@@ -37,6 +37,7 @@ JavaScript (Opcional)
 O ficheiro `script.js` tem apenas duas pequenas funções de conveniência. A página funciona toda sem ele.
 Destaca na barra de navegação a secção que está a ser vista (`IntersectionObserver`)
 Fecha o modal quando se clica fora da caixa
+Pausa o vídeo quando se fecha o modal
 
 ---
 Como abrir
