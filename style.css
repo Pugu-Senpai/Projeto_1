@@ -29,6 +29,10 @@ html {
     scroll-behavior: smooth;
 }
 
+html:has(.modal-overlay:target) {
+    overflow: hidden;
+}
+
 body {
     width: 100%;
     overflow-wrap: break-word;
@@ -963,6 +967,7 @@ p {
     aspect-ratio: 16 / 9;
     height: auto;
     border-radius: 1rem;
+    flex-shrink: 0;
 }
 
 /*==================| MODO CLARO |===================*/
