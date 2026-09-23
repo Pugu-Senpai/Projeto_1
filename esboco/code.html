@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Tiago M. Valente — Product &amp; 3D Designer</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>html { scroll-behavior: smooth; } @layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; } section[id] { scroll-margin-top: 72px; }</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-fixed": "#c1ecd4", "on-error": "#ffffff", "surface-container-low": "#f0f6e7", "tertiary-fixed": "#ffdcc5", "on-primary-container": "#86af99", "error-container": "#ffdad6", "on-primary": "#ffffff", "outline-variant": "#c1c8c2", "background": "#f5fced", "on-error-container": "#93000a", "surface-container-high": "#e4eadc", "on-surface-variant": "#414844", "tertiary-container": "#5f2f00", "on-tertiary": "#ffffff", "tertiary-fixed-dim": "#ffb781", "surface-bright": "#f5fced", "surface-container-highest": "#dee5d7", "on-secondary-fixed-variant": "#0e5138", "surface-tint": "#3f6653", "tertiary": "#3f1d00", "secondary": "#2c694e", "inverse-on-surface": "#edf3e5", "primary-container": "#1b4332", "on-primary-fixed": "#002114", "on-surface": "#171d15", "on-background": "#171d15", "error": "#ba1a1a", "on-secondary-fixed": "#002114", "surface-variant": "#dee5d7", "on-secondary-container": "#316e52", "outline": "#717973", "secondary-container": "#aeeecb", "primary-fixed-dim": "#a5d0b9", "inverse-surface": "#2c3229", "secondary-fixed": "#b1f0ce", "on-tertiary-container": "#eb9046", "on-tertiary-fixed": "#301400", "inverse-primary": "#a5d0b9", "surface": "#f5fced", "on-tertiary-fixed-variant": "#703800", "primary": "#012d1d", "surface-dim": "#d6dcce", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "on-primary-fixed-variant": "#274e3d", "secondary-fixed-dim": "#95d4b3", "surface-container": "#eaf0e2" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-2xl": "5rem", "space-xl": "3rem", "margin-mobile": "1.25rem", "space-lg": "1.75rem", "space-md": "1rem", "margin": "3rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1.5rem", "gutter-mobile": "1rem" }, "fontFamily": { "display": [ "Inter" ], "label-sm": [ "Inter" ], "body-md": [ "Inter" ], "body-sm": [ "Inter" ], "body-lg": [ "Inter" ], "headline-lg": [ "Inter" ], "label-md": [ "Inter" ], "headline-sm": [ "Inter" ], "headline-md": [ "Inter" ], "code-meta": [ "Inter" ], "display-mobile": [ "Inter" ], "headline-lg-mobile": [ "Inter" ] }, "fontSize": { "display": [ "3.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "600" } ], "label-sm": [ "0.75rem", { "lineHeight": "1.3", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-md": [ "1rem", { "lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.5", "letterSpacing": "0.005em", "fontWeight": "400" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.6", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "headline-lg": [ "2.5rem", { "lineHeight": "1.2", "letterSpacing": "-0.025em", "fontWeight": "600" } ], "label-md": [ "0.875rem", { "lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500" } ], "headline-sm": [ "1.25rem", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-md": [ "1.75rem", { "lineHeight": "1.3", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "code-meta": [ "0.8125rem", { "lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "400" } ], "display-mobile": [ "2.25rem", { "lineHeight": "1.15", "letterSpacing": "-0.025em", "fontWeight": "600" } ], "headline-lg-mobile": [ "1.75rem", { "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-[#10201A] font-body-md text-on-primary antialiased selection:bg-secondary-container selection:text-primary">
+<!-- 1. FULL-HEIGHT HERO HEADER (100vh / min-h-screen, dark mode #10201A / #14261D) -->
+<header class="min-h-screen w-full flex flex-col justify-between items-stretch bg-gradient-to-b from-[#10201A] via-[#14261D] to-[#10201A] relative overflow-hidden">
+<!-- Atmospheric Glow Accents -->
+<div class="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/4 -bottom-24 w-80 h-80 rounded-full bg-tertiary-container/20 blur-3xl pointer-events-none"></div>
+<!-- Top Bar: Subtle logo / brand mark & status -->
+<div class="w-full max-w-[1360px] mx-auto px-margin-mobile lg:px-margin pt-6 flex items-center justify-between relative z-20">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container shadow-[0_0_8px_rgba(174,238,203,0.8)]"></span>
+<span class="font-headline-sm text-headline-sm tracking-tight text-on-primary font-semibold">Terra &amp; Form</span>
+<span class="hidden sm:inline-block font-code-meta text-code-meta text-secondary-fixed-dim px-space-xs py-0.5 rounded bg-primary/60 border border-secondary/20">3D &amp; Industrial</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/70 border border-secondary/20 text-secondary-fixed font-code-meta text-code-meta">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">dark_mode</span>
+<span>Modo Escuro Ativo</span>
+</div>
+</div>
+<!-- Main Hero Body (Vertically Distributed, Generous Spacing, Strict Column Layout) -->
+<div class="max-w-[760px] mx-auto px-margin-mobile my-auto py-8 text-center flex flex-col items-center justify-center space-y-6 relative z-10">
+<!-- Circular Portrait -->
+<div class="relative group">
+<div class="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-secondary to-secondary-container blur-md opacity-80 group-hover:opacity-100 transition duration-500"></div>
+<img alt="Tiago M. Valente - Product &amp; 3D Designer" class="relative w-32 h-32 sm:w-36 sm:h-36 rounded-full object-cover shadow-2xl ring-2 ring-secondary-fixed/30" src="https://lh3.googleusercontent.com/aida/AEtjO1Xg7YiOHNHyoLkQmIUrMp8G1aZhlYQK-Lq3XBCF79WOS7xoaIwnlcJcQASfZma7gpR7lf3nl9cYaeuPT9X9_l0Ap31h4j3SpzIc1a4CQ01TkQDNa4Rcyyt_C4LPVLjx85xwtYf-ApYR945alkCmJ9lvMdn3_pqqeqowZlkp-U2sCSWMv-2sifbSpg6aNXnWWRiJMdnn9799YTT8nHKY0FsA2tI4g19ZaXy3xizLDW85lW_sRl-ApSnJCUM"/>
+<span class="absolute bottom-1 right-1 w-6 h-6 bg-secondary-container rounded-full flex items-center justify-center shadow-lg">
+<span class="w-3 h-3 bg-[#14261D] rounded-full animate-ping"></span>
+</span>
+</div>
+<!-- 1. Name & Status Badge -->
+<div class="space-y-3 flex flex-col items-center">
+<div class="inline-flex items-center gap-space-xs px-3.5 py-1 rounded-full bg-primary/70 border border-secondary/30 text-secondary-fixed text-label-sm font-label-sm tracking-wide shadow-sm">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">verified</span>
+<span>Disponível para Projetos Físicos &amp; 3D</span>
+</div>
+<h1 class="font-headline-lg text-display-mobile sm:text-headline-lg font-bold tracking-tight text-white">
+        Tiago M. Valente
+      </h1>
+</div>
+<!-- 2. Title / Tagline in Luminous Typography -->
+<p class="font-headline-md text-headline-sm sm:text-headline-md text-secondary-fixed font-medium tracking-tight drop-shadow-[0_0_12px_rgba(165,208,185,0.3)]">
+      Product &amp; 3D / CAD Designer
+    </p>
+<!-- 3. Contact Details Stacked Vertically Below -->
+<div class="flex flex-col items-center gap-1.5 text-on-primary-container font-code-meta text-code-meta">
+<span class="inline-flex items-center gap-2 hover:text-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-base text-secondary-fixed">mail</span>
+<a class="hover:underline" href="mailto:tiago.valente@designstudio.pt">tiago.valente@designstudio.pt</a>
+</span>
+<span class="inline-flex items-center gap-2 hover:text-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-base text-secondary-fixed">call</span>
+<a class="hover:underline" href="tel:+351912345678">+351 912 345 678</a>
+</span>
+<span class="inline-flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-secondary-fixed">location_on</span>
+<span>Porto / Lisboa, Portugal</span>
+</span>
+</div>
+<!-- 4. Social Icons & CTA Stacked Vertically / Compact Column Below Contacts -->
+<div class="flex flex-col items-center gap-3 w-full max-w-xs pt-1">
+<!-- Terracotta #E08942 Download CV Button -->
+<a class="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-on-tertiary-container hover:bg-tertiary-fixed text-primary font-headline-sm text-label-md font-bold tracking-wide shadow-lg shadow-on-tertiary-container/30 transition-all duration-200 hover:scale-[1.02]" href="#download-cv">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">download</span>
+<span>Descarregar CV (PDF)</span>
+</a>
+<!-- Compact Social Column -->
+<div class="flex items-center justify-center gap-3">
+<a aria-label="LinkedIn" class="w-10 h-10 rounded-lg bg-primary/60 border border-secondary/20 hover:bg-primary text-secondary-fixed hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-sm" href="https://linkedin.com" rel="noopener noreferrer" target="_blank" title="LinkedIn">
+<span class="material-symbols-outlined text-lg">share</span>
+</a>
+<a aria-label="GitHub / CAD Archive" class="w-10 h-10 rounded-lg bg-primary/60 border border-secondary/20 hover:bg-primary text-secondary-fixed hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-sm" href="https://github.com" rel="noopener noreferrer" target="_blank" title="GitHub / CAD Archive">
+<span class="material-symbols-outlined text-lg">terminal</span>
+</a>
+<a aria-label="Enviar Email" class="w-10 h-10 rounded-lg bg-primary/60 border border-secondary/20 hover:bg-primary text-secondary-fixed hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-sm" href="mailto:tiago.valente@designstudio.pt" title="Email">
+<span class="material-symbols-outlined text-lg">send</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 2. STICKY / FIXED NAVIGATION BAR (Pinned at bottom of 100vh hero, sticks to top when scrolling) -->
+<div class="sticky top-0 z-50 w-full bg-[#14261D]/90 backdrop-blur-md shadow-lg border-b border-emerald-900/40">
+<div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between overflow-x-auto py-2.5">
+<nav aria-label="Navegação do Portfólio" class="flex items-center gap-1.5 sm:gap-4 min-w-max">
+<a class="nav-anchor inline-flex items-center gap-2 px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-tertiary-container bg-surface-container-high/15 font-semibold transition-colors" href="#sobre-mim">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span>01. Sobre mim</span>
+</a>
+<a class="nav-anchor inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-primary-container hover:text-on-primary hover:bg-white/5 transition-colors" href="#educacao">
+<span>02. Educação</span>
+</a>
+<a class="nav-anchor inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-primary-container hover:text-on-primary hover:bg-white/5 transition-colors" href="#experiencia">
+<span>03. Experiência</span>
+</a>
+<a class="nav-anchor inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-primary-container hover:text-on-primary hover:bg-white/5 transition-colors" href="#competencias">
+<span>04. Competências</span>
+</a>
+<a class="nav-anchor inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-primary-container hover:text-on-primary hover:bg-white/5 transition-colors" href="#hobbies">
+<span>05. Hobbies</span>
+</a>
+</nav>
+<span class="font-code-meta text-code-meta text-on-primary-container hidden md:inline-flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+        Bio-Design &amp; DFM Specialist
+      </span>
+</div>
+</div>
+</header>
+<main class="w-full bg-[#10201A]">
+<div class="flex flex-col w-full text-on-primary">
+<!-- SECTION 1: Sobre mim (Background: Deep Dark Canvas #10201A) -->
+<section class="w-full bg-[#10201A] text-on-primary py-space-2xl relative" id="sobre-mim">
+<div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left: Bio and Metrics -->
+<div class="lg:col-span-6 space-y-space-md">
+<div class="flex items-center gap-2 font-code-meta text-code-meta text-secondary-fixed tracking-wider uppercase">
+<span class="text-on-tertiary-container font-semibold">01</span>
+<span>/</span>
+<span>Perfil &amp; Filosofia</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-semibold tracking-tight text-inverse-on-surface">
+            Sobre mim
+          </h2>
+<p class="font-body-lg text-body-lg text-outline-variant leading-relaxed">
+            Sou designer de produto focado na intersecção entre a <span class="text-secondary-fixed font-medium">precisão milimétrica do CAD paramétrico</span> e a organicidade dos biomateriais. A minha prática equilibra rigor de engenharia (DFM, tolerâncias e simulação computacional) com a sensibilidade táctil necessária para criar objetos que envelhecem com dignidade.
+          </p>
+<p class="font-body-md text-body-md text-outline-variant leading-relaxed">
+            Com formação académica pelas Belas Artes do Porto e certificações avançadas em SolidWorks e Rhinoceros/Grasshopper, dedico-me ao desenvolvimento de dispositivos físicos, iluminação modular e embalagens regenerativas concebidas para a economia circular.
+          </p>
+<!-- Key Metrics Grid -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-sm">
+<div class="p-space-md rounded-xl bg-[#14261D] border border-secondary/15 shadow-sm">
+<span class="block font-headline-md text-headline-md font-bold text-secondary-fixed">+18</span>
+<span class="font-label-sm text-label-sm text-outline-variant uppercase tracking-wider">Modelos CAD Fabricados</span>
+</div>
+<div class="p-space-md rounded-xl bg-[#14261D] border border-secondary/15 shadow-sm">
+<span class="block font-headline-md text-headline-md font-bold text-on-tertiary-container">100%</span>
+<span class="font-label-sm text-label-sm text-outline-variant uppercase tracking-wider">Foco em DFM &amp; FEA</span>
+</div>
+<div class="p-space-md rounded-xl bg-[#14261D] border border-secondary/15 shadow-sm">
+<span class="block font-headline-md text-headline-md font-bold text-secondary-fixed">3</span>
+<span class="font-label-sm text-label-sm text-outline-variant uppercase tracking-wider">Anos de Especialização</span>
+</div>
+</div>
+<!-- Material Tags -->
+<div class="pt-space-xs flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-high/20 text-secondary-fixed border border-secondary/20">Geometria Computacional</span>
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-high/20 text-secondary-fixed border border-secondary/20">Design Biofílico</span>
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-high/20 text-secondary-fixed border border-secondary/20">Prototipagem Aditiva</span>
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-high/20 text-secondary-fixed border border-secondary/20">Eco-concepção</span>
+</div>
+</div>
+<!-- Right: Full Body Studio Editorial Portrait with Gradient Scrim -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl bg-primary-container aspect-[4/3] lg:aspect-[5/4] border border-secondary/20">
+<img alt="Tiago M. Valente no estúdio com protótipos e plantas" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1W8z_25pQDWmCMwHVY4c6h6NOk9UjUktaqooVn8eWF3LyQsejjzy21C94odfTQrVXA3_8PZmxN1643HggLYPvqzxzrMjn3jQszeH3RFJlDBpbDsfJQMSln_9G36quXcMux5psyc9cQw4Ahqh9NgygPeisMy9CJtysRelYRst4bY5alWWiArtRBtyadhysj3aNrPfy8iz_73_gAHcVtpvqa6L2uD-1ESmESTnbWHA6OMNqUtq7RxvF9-a4c"/>
+<!-- Left subtle edge gradient for cinematic blending -->
+<div class="absolute inset-0 bg-gradient-to-r from-[#10201A] via-transparent to-transparent opacity-60 pointer-events-none"></div>
+<!-- Bottom subtle data plaque -->
+<div class="absolute bottom-4 left-4 right-4 p-space-sm rounded-lg bg-primary/80 backdrop-blur-md flex items-center justify-between text-code-meta font-code-meta border border-secondary/20">
+<span class="text-secondary-fixed">Estúdio &amp; Atelier de Modelação</span>
+<span class="text-on-primary-container">Porto, 2025</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Educação (Background: Secondary Surface #1B2E22) -->
+<section class="w-full bg-[#1B2E22] text-on-primary py-space-2xl relative" id="educacao">
+<div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left: Architectural Sketch & Design Setup -->
+<div class="lg:col-span-5 order-2 lg:order-1 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] border border-secondary/20">
+<img alt="Cadernos de desenho geométrico e réguas de precisão em latão" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1VnKGdWBkwo9ovX39iOySoe5zSaSYyZow5RhsptzMqazTrlufyZjfERX5pv4NnLop4S9DU71k0MimTPZmcadvxjZdki0gp5QT13uGkcgBEw5qacGWZYQRZl-AuJO1v1MCDd9-8p9ujfFA-5EitlG47kOg462ksOsHt1HeqqzGL1zyCO6Jmy8uBjOgvzpbfk-__b5IrDO6nGaErUUzHSHMyOC1wl679Q5A6KRWPKk1XCKQFK53P7Bc6nRnTr"/>
+<!-- Soft gradient mask on right edge -->
+<div class="absolute inset-0 bg-gradient-to-l from-[#1B2E22] via-transparent to-transparent opacity-60 pointer-events-none"></div>
+<div class="absolute top-4 left-4 px-3 py-1.5 rounded-md bg-primary/70 backdrop-blur font-code-meta text-code-meta text-secondary-fixed border border-secondary/20">
+              Geometria Descritiva &amp; Traço
+            </div>
+</div>
+</div>
+<!-- Right: Education Timeline with Glowing Nodes -->
+<div class="lg:col-span-7 order-1 lg:order-2 space-y-space-md">
+<div class="flex items-center gap-2 font-code-meta text-code-meta text-secondary-fixed tracking-wider uppercase">
+<span class="text-on-tertiary-container font-semibold">02</span>
+<span>/</span>
+<span>Formação</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-semibold tracking-tight text-inverse-on-surface">
+            Educação &amp; Trajetória Académica
+          </h2>
+<!-- Vertical Timeline -->
+<div class="relative pl-6 space-y-space-lg before:content-[''] before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-tint/40">
+<!-- Node 1: Licenciatura -->
+<div class="relative group">
+<span class="absolute -left-6 top-1.5 w-5 h-5 rounded-full bg-primary flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container shadow-[0_0_8px_rgba(235,144,70,0.8)]"></span>
+</span>
+<div class="p-space-md rounded-xl bg-primary/50 hover:bg-primary/70 border border-secondary/15 transition duration-200 shadow-md">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high/20 text-secondary-fixed font-code-meta text-code-meta font-medium border border-secondary/20">2020 – 2023</span>
+<span class="font-code-meta text-code-meta text-outline-variant">Média de Conclusão: 17/20</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-primary mt-1.5">
+                  Licenciatura em Design de Produto
+                </h3>
+<p class="font-label-md text-label-md text-secondary-fixed-dim">
+                  Faculdade de Belas Artes da Universidade do Porto (FBAUP)
+                </p>
+<p class="font-body-sm text-body-sm text-outline-variant mt-2">
+                  Dissertação prática centrada no aproveitamento de resíduos cerâmicos para luminárias biofílicas. Domínio de metodologias de prototipagem rápida, ergonomia física e desenho industrial assistido por computador.
+                </p>
+</div>
+</div>
+<!-- Node 2: Ensino Secundário Artístico -->
+<div class="relative group">
+<span class="absolute -left-6 top-1.5 w-5 h-5 rounded-full bg-primary flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container shadow-[0_0_8px_rgba(174,238,203,0.8)]"></span>
+</span>
+<div class="p-space-md rounded-xl bg-primary/50 hover:bg-primary/70 border border-secondary/15 transition duration-200 shadow-md">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high/20 text-secondary-fixed font-code-meta text-code-meta font-medium border border-secondary/20">2017 – 2020</span>
+<span class="font-code-meta text-code-meta text-outline-variant">Especialização Técnica</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-primary mt-1.5">
+                  Artes Visuais &amp; Geometria Descritiva
+                </h3>
+<p class="font-label-md text-label-md text-secondary-fixed-dim">
+                  Escola Artística Soares dos Reis, Porto
+                </p>
+<p class="font-body-sm text-body-sm text-outline-variant mt-2">
+                  Fundamentação em sistemas de projeção axonométrica, corte tridimensional, história da forma e estudos rigorosos de desenho analítico à mão livre.
+                </p>
+</div>
+</div>
+<!-- Node 3: Certificações Profissionais -->
+<div class="relative group">
+<span class="absolute -left-6 top-1.5 w-5 h-5 rounded-full bg-primary flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed"></span>
+</span>
+<div class="p-space-md rounded-xl bg-primary/50 hover:bg-primary/70 border border-secondary/15 transition duration-200 shadow-md">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high/20 text-secondary-fixed font-code-meta text-code-meta font-medium border border-secondary/20">Acreditações Oficiais</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-primary mt-1.5">
+                  Certificações Industriais CSWP &amp; Grasshopper Advanced
+                </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2 font-code-meta text-code-meta text-outline-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary-container">check_circle</span>
+<span>Certified SolidWorks Professional (CSWP)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary-container">check_circle</span>
+<span>McNeel Rhino 3D Level II &amp; Algorithmic Modeling</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Experiência (Background: Deep Dark Canvas #10201A) -->
+<section class="w-full bg-[#10201A] text-on-primary py-space-2xl relative" id="experiencia">
+<div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left: Experiência Cards -->
+<div class="lg:col-span-7 space-y-space-md">
+<div class="flex items-center gap-2 font-code-meta text-code-meta text-secondary-fixed tracking-wider uppercase">
+<span class="text-on-tertiary-container font-semibold">03</span>
+<span>/</span>
+<span>Carreira</span>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg font-semibold tracking-tight text-inverse-on-surface">
+              Experiência Profissional
+            </h2>
+<div class="flex items-center gap-space-sm mt-1">
+<span class="font-headline-sm text-headline-sm text-secondary-fixed font-medium">Vertente Studio</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-md text-label-md text-outline-variant">Junior Product Designer &amp; CAD Specialist (2023 – Presente)</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-outline-variant">
+            Atuação na linha de frente do desenvolvimento técnico e industrial, participando desde as primeiras maquetes de esferovite e argila até aos ficheiros de corte CNC e moldes de injeção termoplástica.
+          </p>
+<!-- 3 Focus Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-2">
+<div class="p-space-md rounded-xl bg-primary-container/80 hover:bg-primary-container border border-secondary/15 transition-all duration-300 shadow-md group">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high/20 flex items-center justify-center text-secondary-fixed mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-lg">deployed_code</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-primary">
+                Otimização de Malhas
+              </h3>
+<p class="font-body-sm text-body-sm text-outline-variant mt-1">
+                Remodelação de topologias complexas com redução de 40% no peso de componentes sem perda estrutural.
+              </p>
+</div>
+<div class="p-space-md rounded-xl bg-primary-container/80 hover:bg-primary-container border border-secondary/15 transition-all duration-300 shadow-md group">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high/20 flex items-center justify-center text-on-tertiary-container mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-lg">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-primary">
+                5 Produtos no Mercado
+              </h3>
+<p class="font-body-sm text-body-sm text-outline-variant mt-1">
+                Acompanhamento presencial em chão de fábrica de 5 linhas de produtos seriados e funcionais.
+              </p>
+</div>
+<div class="p-space-md rounded-xl bg-primary-container/80 hover:bg-primary-container border border-secondary/15 transition-all duration-300 shadow-md group">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high/20 flex items-center justify-center text-secondary-fixed mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-lg">view_in_ar</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-primary">
+                Simulação FEA &amp; Render
+              </h3>
+<p class="font-body-sm text-body-sm text-outline-variant mt-1">
+                Validação de tensão mecânica e geração de renders foto-realistas para catálogos comerciais e investidores.
+              </p>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-primary-container/40 border border-secondary/15 flex items-center gap-3 text-code-meta font-code-meta text-on-primary-container">
+<span class="material-symbols-outlined text-secondary-fixed text-base">verified</span>
+<span>Fluxo de trabalho integrado: Rhino 8 &gt; STEP Export &gt; FEA Analysis &gt; DFM Review</span>
+</div>
+</div>
+<!-- Right: 3D CAD Monitor Image with Glow and Scrim -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] group border border-secondary/20">
+<img alt="Estação de trabalho de design industrial com modelação CAD 3D sustentável em Rhino e amostras de bio-resina" class="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AEtjO1WoP5IUq2WlKGQ8elA4jzIlBbD9_gkEPLTNiz19Y1AXyyOTBHgjKMZwo0N5TKMcoGtClcpy_jWCX9KbQehhUD7fyEZ2FpBcVTjvCCSdM-g2-qqw4bZnB7Gaxy4aVly5q_MjyoUsZO3085OxJw4zdQNlZndnO5qVboaHZhVj9c_NU6jtMeXuYGTqd3uGIyFZ2QnzDVE9kVixgZPWnxQsQobbvNQgZgMt5Kapg6SfupoSx9W9BlFmRfvzURND"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-70 pointer-events-none"></div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between p-3 rounded-lg bg-primary/80 backdrop-blur-md font-code-meta text-code-meta border border-secondary/20">
+<span class="text-secondary-fixed font-medium">Viewport: Bio-Resin Device CAD #04</span>
+<span class="text-on-tertiary-container font-bold">DFM Validado</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Competências (Background: Secondary Surface #1B2E22) -->
+<section class="w-full bg-[#1B2E22] text-on-primary py-space-2xl relative" id="competencias">
+<div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left: Heading & Context -->
+<div class="lg:col-span-5 space-y-space-md">
+<div class="flex items-center gap-2 font-code-meta text-code-meta text-secondary-fixed tracking-wider uppercase">
+<span class="text-on-tertiary-container font-semibold">04</span>
+<span>/</span>
+<span>Valências</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-semibold tracking-tight text-inverse-on-surface">
+            Competências Técnicas &amp; Digitais
+          </h2>
+<p class="font-body-md text-body-md text-outline-variant leading-relaxed">
+            Proficiência construída através de projetos reais em ambiente industrial. Do design de cascas plásticas finas com saídas de desmoldagem à programação generativa para texturas táteis avançadas.
+          </p>
+<!-- Key stack tags -->
+<div class="p-space-md rounded-xl bg-primary/40 border border-secondary/15 space-y-3">
+<h3 class="font-headline-sm text-headline-sm text-on-primary font-medium">Ferramentas Diárias</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 rounded-md text-label-sm font-label-sm bg-primary text-secondary-fixed border border-secondary/20">SolidWorks CAD</span>
+<span class="px-2.5 py-1 rounded-md text-label-sm font-label-sm bg-primary text-secondary-fixed border border-secondary/20">Rhinoceros 8</span>
+<span class="px-2.5 py-1 rounded-md text-label-sm font-label-sm bg-primary text-secondary-fixed border border-secondary/20">Grasshopper</span>
+<span class="px-2.5 py-1 rounded-md text-label-sm font-label-sm bg-primary text-secondary-fixed border border-secondary/20">KeyShot 11</span>
+<span class="px-2.5 py-1 rounded-md text-label-sm font-label-sm bg-primary text-secondary-fixed border border-secondary/20">Blender 4.0</span>
+<span class="px-2.5 py-1 rounded-md text-label-sm font-label-sm bg-primary text-secondary-fixed border border-secondary/20">Bambu Studio (FDM)</span>
+<span class="px-2.5 py-1 rounded-md text-label-sm font-label-sm bg-primary text-secondary-fixed border border-secondary/20">Formlabs (SLA)</span>
+</div>
+</div>
+</div>
+<!-- Right: Progress Bars with Glowing Percentages -->
+<div class="lg:col-span-7 space-y-5">
+<!-- Skill 1: SolidWorks & Rhino -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-label-md font-label-md">
+<span class="text-on-primary font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">shape_line</span>
+                SolidWorks &amp; Rhinoceros 3D / Grasshopper
+              </span>
+<span class="font-code-meta text-code-meta font-bold text-secondary-fixed">95%</span>
+</div>
+<div class="w-full h-3 bg-primary rounded-full overflow-hidden p-0.5">
+<div class="h-full bg-gradient-to-r from-secondary to-secondary-container rounded-full shadow-[0_0_10px_rgba(174,238,203,0.4)]" style="width: 95%;"></div>
+</div>
+</div>
+<!-- Skill 2: Prototipagem -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-label-md font-label-md">
+<span class="text-on-primary font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">print</span>
+                Prototipagem Rápida (3D Print FDM/SLA &amp; CNC)
+              </span>
+<span class="font-code-meta text-code-meta font-bold text-secondary-fixed">90%</span>
+</div>
+<div class="w-full h-3 bg-primary rounded-full overflow-hidden p-0.5">
+<div class="h-full bg-gradient-to-r from-secondary to-secondary-container rounded-full" style="width: 90%;"></div>
+</div>
+</div>
+<!-- Skill 3: KeyShot & Blender -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-label-md font-label-md">
+<span class="text-on-primary font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">auto_fix_high</span>
+                Renderização KeyShot &amp; Blender Cycles
+              </span>
+<span class="font-code-meta text-code-meta font-bold text-secondary-fixed">88%</span>
+</div>
+<div class="w-full h-3 bg-primary rounded-full overflow-hidden p-0.5">
+<div class="h-full bg-gradient-to-r from-secondary to-secondary-container rounded-full" style="width: 88%;"></div>
+</div>
+</div>
+<!-- Skill 4: HTML5 & CSS3 -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-label-md font-label-md">
+<span class="text-on-primary font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">code</span>
+                HTML5 &amp; CSS3 (Interfaces e WebGL Embeds)
+              </span>
+<span class="font-code-meta text-code-meta font-bold text-secondary-fixed">82%</span>
+</div>
+<div class="w-full h-3 bg-primary rounded-full overflow-hidden p-0.5">
+<div class="h-full bg-gradient-to-r from-secondary to-secondary-container rounded-full" style="width: 82%;"></div>
+</div>
+</div>
+<!-- Skill 5: JavaScript & Interatividade -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-label-md font-label-md">
+<span class="text-on-primary font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">javascript</span>
+                JavaScript &amp; Configurações Interativas 3D
+              </span>
+<span class="font-code-meta text-code-meta font-bold text-secondary-fixed">75%</span>
+</div>
+<div class="w-full h-3 bg-primary rounded-full overflow-hidden p-0.5">
+<div class="h-full bg-gradient-to-r from-secondary to-secondary-container rounded-full" style="width: 75%;"></div>
+</div>
+</div>
+<!-- Skill 6: SQL & Produção -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-label-md font-label-md">
+<span class="text-on-primary font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">database</span>
+                SQL &amp; Controlo de Dados de Produção / BOM
+              </span>
+<span class="font-code-meta text-code-meta font-bold text-secondary-fixed">70%</span>
+</div>
+<div class="w-full h-3 bg-primary rounded-full overflow-hidden p-0.5">
+<div class="h-full bg-gradient-to-r from-secondary to-secondary-container rounded-full" style="width: 70%;"></div>
+</div>
+</div>
+<!-- Easter Egg Skill 7: Culinária em Terracotta #E08942 -->
+<div class="p-space-md rounded-xl bg-primary/80 border border-on-tertiary-container/30 space-y-2 mt-4 shadow-lg relative overflow-hidden">
+<div class="flex flex-wrap justify-between items-center gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-tertiary-container text-xl" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-tertiary-container">
+                  Culinária (Cooking &amp; Alta Gastronomia)
+                </span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-code-meta font-code-meta bg-on-tertiary-container/20 text-on-tertiary-container font-semibold uppercase">
+                  Easter Egg / Chef Amador
+                </span>
+<span class="font-code-meta text-code-meta font-bold text-on-tertiary-container text-base">99%</span>
+</div>
+</div>
+<div class="w-full h-3 bg-primary rounded-full overflow-hidden p-0.5">
+<div class="h-full bg-on-tertiary-container rounded-full shadow-[0_0_12px_rgba(235,144,70,0.9)]" style="width: 99%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant">
+              Precisão de balança analítica aplicada à confeção gastronómica: sourdough, fermentação natural, sous-vide e empratamento escultural.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: Hobbies (Background: Deep Dark Canvas #10201A) -->
+<section class="w-full bg-[#10201A] text-on-primary py-space-2xl relative" id="hobbies">
+<div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin space-y-space-xl">
+<!-- Section Header -->
+<div class="max-w-2xl space-y-space-xs">
+<div class="flex items-center gap-2 font-code-meta text-code-meta text-secondary-fixed tracking-wider uppercase">
+<span class="text-on-tertiary-container font-semibold">05</span>
+<span>/</span>
+<span>Interesses</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-semibold tracking-tight text-inverse-on-surface">
+          Hobbies &amp; Paixões Pessoais
+        </h2>
+<p class="font-body-lg text-body-lg text-outline-variant">
+          O pensamento tridimensional e o fascínio pela mecânica estendem-se aos meus momentos de lazer e exploração autodidata.
+        </p>
+</div>
+<!-- 3-Card Grid with Tonal Surface & Glowing Hover Effects -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Hobby 1: Motociclismo -->
+<div class="p-space-lg rounded-2xl bg-primary-container hover:bg-primary-container/90 border border-secondary/15 transition-all duration-300 shadow-xl group relative flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high/20 flex items-center justify-center text-secondary-fixed group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">two_wheeler</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-primary">
+              Motociclismo &amp; Custom Bikes
+            </h3>
+<p class="font-body-md text-body-md text-outline-variant leading-relaxed">
+              Manutenção mecânica preventiva, personalização de componentes em alumínio maquinado e viagens de longa distância pelas estradas cénicas de Portugal e Galiza.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between font-code-meta text-code-meta text-secondary-fixed">
+<span>Mecânica &amp; Liberdade</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Hobby 2: Culinária Criativa -->
+<div class="p-space-lg rounded-2xl bg-primary-container hover:bg-primary-container/90 border border-secondary/15 transition-all duration-300 shadow-xl group relative flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high/20 flex items-center justify-center text-on-tertiary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">skillet</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-primary">
+              Culinária Criativa &amp; Fermentação
+            </h3>
+<p class="font-body-md text-body-md text-outline-variant leading-relaxed">
+              Exploração da panificação com massa-mãe de hidratação a 85%, desenvolvimento de misos caseiros e experimentação com temperaturas precisas para texturas perfeitas.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between font-code-meta text-code-meta text-on-tertiary-container">
+<span>Ciência dos Alimentos</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Hobby 3: Videojogos & Simulação -->
+<div class="p-space-lg rounded-2xl bg-primary-container hover:bg-primary-container/90 border border-secondary/15 transition-all duration-300 shadow-xl group relative flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high/20 flex items-center justify-center text-secondary-fixed group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">sports_esports</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-primary">
+              Videojogos &amp; Simulação Física
+            </h3>
+<p class="font-body-md text-body-md text-outline-variant leading-relaxed">
+              Apreciação de mundos virtuais com motores de física avançados (Unreal Engine 5), simulação aerodinâmica e estudo de ergonomia para comandos hápticos.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between font-code-meta text-code-meta text-secondary-fixed">
+<span>Ambientes Virtuais</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER & CALL-TO-ACTION (Modo Escuro Integrado) -->
+<section class="w-full bg-[#14261D] text-on-primary py-space-xl relative overflow-hidden" id="download-cv">
+<div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin">
+<div class="p-space-xl rounded-3xl bg-[#10201A] border border-secondary/20 shadow-2xl relative flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="space-y-2 text-center md:text-left max-w-xl">
+<span class="px-3 py-1 rounded-full text-code-meta font-code-meta bg-surface-container-high/20 text-secondary-fixed border border-secondary/20">
+            Pronto para Novas Colaborações
+          </span>
+<h3 class="font-headline-lg text-headline-lg font-semibold text-on-primary">
+            Vamos desenhar o futuro dos objetos juntos?
+          </h3>
+<p class="font-body-md text-body-md text-outline-variant">
+            Aberto a oportunidades em regime presencial (Porto/Lisboa) ou trabalho remoto com equipas globais de design de produto e engenharia.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto">
+<a class="w-full sm:w-auto px-space-lg py-3 rounded-lg bg-surface-container-high/20 hover:bg-surface-container-high/40 text-on-primary font-headline-sm text-label-md font-semibold text-center transition-colors border border-secondary/20" href="mailto:tiago.valente@designstudio.pt">
+            Enviar Mensagem
+          </a>
+<a class="w-full sm:w-auto px-space-lg py-3 rounded-lg bg-on-tertiary-container hover:bg-tertiary-fixed text-primary font-headline-sm text-label-md font-semibold text-center shadow-lg transition-all hover:scale-105" href="#download-cv" onclick="alert('O ficheiro Curriculo_Tiago_Valente_2025.pdf foi preparado para descarregar.'); return false;">
+            Descarregar CV Completo
+          </a>
+</div>
+</div>
+<!-- Quote & Back-to-top Strip -->
+<div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-4 font-code-meta text-code-meta text-on-primary-container">
+<p class="italic text-center sm:text-left">
+          “A forma segue a matéria tanto quanto a matéria abraça a função.”
+        </p>
+<a class="inline-flex items-center gap-1 hover:text-secondary-fixed transition-colors" href="#sobre-mim">
+<span>Voltar ao Início</span>
+<span class="material-symbols-outlined text-sm">arrow_upward</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer class="w-full bg-[#0D1A15] border-t border-emerald-950/60 text-outline-variant">
+<div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin py-space-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-space-lg">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-headline-sm text-headline-sm text-on-primary">Terra &amp; Form Architecture of Objects</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant max-w-md">Balancing architectural precision, rapid prototyping, and biophilic material studies for physical computing and industrial products.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-lg">
+<div class="flex flex-col text-left md:text-right">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Studio Location</span>
+<span class="font-body-sm text-body-sm text-on-primary">Porto / Lisboa &amp; Remote</span>
+</div>
+<div class="flex flex-col text-left md:text-right">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Status</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed font-medium">Available Q3/Q4</span>
+</div>
+</div>
+</div>
+<div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin py-space-md flex flex-col sm:flex-row justify-between items-center gap-space-sm text-outline-variant font-code-meta text-code-meta border-t border-emerald-950/30">
+<p>© 2025 Terra &amp; Form. Crafted with organic precision.</p>
+<div class="flex items-center gap-space-md">
+<span>Rhino / SolidWorks</span>
+<span>DFM Certified</span>
+<span>KeyShot Render</span>
+</div>
+</div>
+</footer>
+<script>
+  // Smooth scroll spy interaction for section highlighting on sticky navbar
+  document.addEventListener('DOMContentLoaded', () => {
+    const navAnchors = document.querySelectorAll('.nav-anchor');
+    const sections = document.querySelectorAll('section[id]');
+
+    function updateActiveNav() {
+      let currentId = '';
+      const scrollPos = window.scrollY + 100;
+
+      sections.forEach(sec => {
+        const top = sec.offsetTop;
+        const height = sec.offsetHeight;
+        if (scrollPos >= top && scrollPos < top + height) {
+          currentId = sec.getAttribute('id');
+        }
+      });
+
+      navAnchors.forEach(a => {
+        const href = a.getAttribute('href').replace('#', '');
+        if (href === currentId) {
+          a.classList.add('text-on-tertiary-container', 'bg-surface-container-high/15', 'font-semibold');
+          a.classList.remove('text-on-primary-container', 'hover:bg-white/5');
+        } else {
+          a.classList.remove('text-on-tertiary-container', 'bg-surface-container-high/15', 'font-semibold');
+          a.classList.add('text-on-primary-container', 'hover:bg-white/5');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveNav);
+    updateActiveNav();
+  });
+</script>
+</body></html>
